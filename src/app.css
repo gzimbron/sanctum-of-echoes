@@ -1,0 +1,112 @@
+:root {
+	--bg-abyss: #0a0d14;
+	--bg-panel: rgba(14, 18, 28, 0.88);
+	--bg-panel-solid: #111622;
+	--border-stone: rgba(148, 174, 212, 0.22);
+	--border-gold: rgba(232, 185, 72, 0.55);
+	--gold: #e8b948;
+	--gold-bright: #fff0a8;
+	--emerald: #58f2c8;
+	--crimson: #ff4a64;
+	--text-primary: #f1f5fb;
+	--text-muted: #98a7bf;
+	--font-display: 'Cinzel', Georgia, serif;
+	--font-pixel: 'Silkscreen', monospace;
+	--font-body: 'Inter', system-ui, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: var(--bg-abyss);
+	color: var(--text-primary);
+	font-family: var(--font-body);
+	-webkit-font-smoothing: antialiased;
+	user-select: none;
+}
+
+canvas {
+	image-rendering: pixelated;
+	image-rendering: crisp-edges;
+}
+
+.pixelated {
+	image-rendering: pixelated;
+	image-rendering: crisp-edges;
+}
+
+.btn-primary {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+	padding: 0.75rem 1.65rem;
+	border: 1px solid var(--gold);
+	border-radius: 6px;
+	background: linear-gradient(180deg, #e8b948 0%, #b88222 100%);
+	color: #161108;
+	font-family: var(--font-pixel);
+	font-size: 0.9rem;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	cursor: pointer;
+	box-shadow: 0 4px 20px rgba(232, 185, 72, 0.28), inset 0 1px 0 rgba(255, 245, 195, 0.65);
+	transition: transform 120ms ease, filter 120ms ease, box-shadow 120ms ease;
+}
+
+.btn-primary:hover {
+	filter: brightness(1.08);
+	transform: translateY(-1px);
+	box-shadow: 0 6px 26px rgba(232, 185, 72, 0.42), inset 0 1px 0 rgba(255, 245, 195, 0.8);
+}
+
+.btn-primary:active {
+	transform: translateY(1px);
+}
+
+.btn-ghost {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.45rem;
+	padding: 0.6rem 1.15rem;
+	border: 1px solid var(--border-stone);
+	border-radius: 6px;
+	background: rgba(20, 26, 40, 0.78);
+	color: var(--text-primary);
+	font-family: var(--font-pixel);
+	font-size: 0.76rem;
+	cursor: pointer;
+	transition: border-color 120ms ease, background 120ms ease;
+}
+
+.btn-ghost:hover {
+	border-color: var(--border-gold);
+	background: rgba(34, 43, 64, 0.9);
+}
+
+.kbd {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 1.5rem;
+	padding: 0.14rem 0.4rem;
+	border: 1px solid rgba(186, 206, 235, 0.28);
+	border-bottom-width: 2px;
+	border-radius: 4px;
+	background: rgba(16, 22, 34, 0.92);
+	color: var(--gold-bright);
+	font-family: var(--font-pixel);
+	font-size: 0.66rem;
+	line-height: 1.2;
+}
