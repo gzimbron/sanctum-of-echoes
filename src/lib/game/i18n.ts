@@ -44,6 +44,8 @@ export interface TranslationBundle {
 	meta: {
 		langCode: string;
 		switchTooltip: string;
+		githubLabel: string;
+		githubTitle: string;
 	};
 	title: {
 		eyebrow: string;
@@ -180,7 +182,9 @@ export const TRANSLATIONS: Record<Locale, TranslationBundle> = {
 	en: {
 		meta: {
 			langCode: 'EN',
-			switchTooltip: 'Switch language (EN / ES)'
+			switchTooltip: 'Switch language (EN / ES)',
+			githubLabel: 'GitHub',
+			githubTitle: 'View source code on GitHub'
 		},
 		title: {
 			eyebrow: 'ENDLESS 2D DUNGEON ADVENTURE',
@@ -372,7 +376,9 @@ export const TRANSLATIONS: Record<Locale, TranslationBundle> = {
 	es: {
 		meta: {
 			langCode: 'ES',
-			switchTooltip: 'Cambiar idioma (ES / EN)'
+			switchTooltip: 'Cambiar idioma (ES / EN)',
+			githubLabel: 'GitHub',
+			githubTitle: 'Ver código fuente en GitHub'
 		},
 		title: {
 			eyebrow: 'AVENTURA DE MAZMORRAS 2D INFINITAS',

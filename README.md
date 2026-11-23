@@ -4,6 +4,10 @@
   <img src="static/assets/title-art.png" alt="Sanctum of Echoes — 16-bit Pixel Art Dungeon Archway" width="760" />
 </p>
 
+<p align="center">
+  <strong><a href="https://gzimbron.github.io/sanctum-of-echoes/">Play Sanctum of Echoes Live &rarr;</a></strong>
+</p>
+
 An endless, procedurally generated 2D top-down dungeon adventure inspired by classic *The Legend of Zelda* (*A Link to the Past* / *The Minish Cap*), built with **SvelteKit 5**, **Phaser 3**, **TypeScript**, custom 16-bit pixel art, and a zero-dependency Web Audio API chiptune synthesizer.
 
 ## Highlights
